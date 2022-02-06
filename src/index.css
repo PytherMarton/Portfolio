@@ -2,17 +2,29 @@
 
 
 body {
+    background-image: linear-gradient(to right bottom, #00F260,#0575E6);
+    background-attachment: fixed;
+}
 
+.row {
+    height: 90vh;
 }
 
 .container {
-    
+    padding-top: 50px; 
 }
 
 .app_sidebar {
-    background-color: aqua;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
 }
 
 .app_main-content {
-    background-color: blueviolet;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
 }
