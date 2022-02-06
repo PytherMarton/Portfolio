@@ -7,11 +7,9 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-lg-3">
-            <div className="app_sidebar">
               <Sidebar />
-            </div>
           </div>
-          <div className="col-lg-9 app_main-content">Main</div>
+          <div className="col-lg-9 app_main_content">Main</div>
         </div>
       </div>
     </div>
