@@ -1,26 +1,31 @@
 import React from "react";
 import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
-import resume from "../assets/icons/resume.png";
-import mightycoder from "../assets/mightycoder.svg";
+import resumeImg from "../assets/icons/resume.png";
+import avatar from "../assets/avatar.svg";
+import resume from "../assets/resume.pdf";
 
 const Sidebar = () => {
+  const handleEmailMe = () => {
+    window.open("mailto:martonpeter18@gmail.com")
+  }
+
   return (
     <div className="sidebar">
-      <img src={mightycoder} alt="avatar" className="sidebar_avatar" />
+      <img src={avatar} alt="avatar" className="sidebar_avatar" />
       <div className="sidebar_name">
         Peter <span>Marton</span>
       </div>
       <div className="sidebar_item sidebar_title">Junior Web Developer</div>
-      <a href="">
+      <a href={resume} download="resume.pdf">
         <div className="sidebar_item sidebar_resume">
-          <img src={resume} alt="resume" className="sidebar_icon" />
+          <img src={resumeImg} alt="resume" className="sidebar_icon" />
           Download Resume
         </div>
       </a>
       <div className="sidebar_contact sidebar_github">
         <div className="sidebar_item">
-          <a href="">
+          <a href="https://github.com/PytherMarton">
             {" "}
             <img src={github} alt="github" className="sidebar_icon mr-3" />
             Github
@@ -32,7 +37,7 @@ const Sidebar = () => {
         <div className="sidebar_item">martonpeter18@gmail.com</div>
         <div className="sidebar_item">07799210282</div>
       </div>
-      <div className="sidebar_item sidebar_email">Email me</div>
+      <div className="sidebar_item sidebar_email" onClick={handleEmailMe}>Email me</div>
     </div>
   );
 };
