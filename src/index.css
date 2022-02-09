@@ -1,32 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
 
-*{
-    margin: 0;
-}
-
 body {
-    background-image: linear-gradient(to right bottom, #00F260,#0575E6);
+    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
     background-attachment: fixed;
+    color: #354538;
 }
 
 a {
     text-decoration: none;
     color: #354548;
+
 }
 
 a:hover {
     text-decoration: none;
-    color: black;
-}
-
-.app_row {
-    height: 90vh;
+    color: #000;
 }
 
 .app_container {
-    padding-top: 50px; 
+    padding-top: 50px;
 }
 
+.app_row {
+    height: 86vh;
+}
+
+
+
+
+.app_main_content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
+}
+
+/* sidebar */
 .sidebar {
     background-color: #fff;
     height: 100%;
@@ -34,13 +43,6 @@ a:hover {
     padding: 25px 15px;
     box-shadow: 0 0 10px black;
     text-align: center;
-}
-
-.app_main_content {
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 25px 15px;
-    box-shadow: 0 0 10px black;
 }
 
 .sidebar_avatar {
@@ -57,21 +59,20 @@ a:hover {
 
 .sidebar_name {
     font-family: 'Kaushan Script';
-    font-size: 1.7rem;
     margin: 20px 0;
+    font-size: 1.7rem;
 }
 
 .sidebar_name>span {
-    color: #00F260
+    color: #00F260;
 }
 
 .sidebar_item {
     margin-bottom: 6px;
-    margin-top: 6px;
+    padding-top: 6px;
     height: 40px;
     font-size: 1.05rem;
     border-radius: 30px;
-    padding-top: 7px;
 }
 
 .sidebar_title {
@@ -82,33 +83,37 @@ a:hover {
 .sidebar_contact {
     background-color: #dbdddf;
     padding: 2px 0;
-    margin: 10px -15px;
+    margin: 20px -15px;
+
 }
 
 .sidebar_email {
-    background-image: linear-gradient(to right bottom, #00F260,#0575E6);
+    background-image: linear-gradient(to right bottom, #00F260, #0575E6);
+
     border-radius: 30px;
     color: #fff;
     margin: 15px 25px 0px;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: all 3s linear;
 }
 
 .sidebar_email:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .sidebar_github:hover,
-.sidebar_resume:hover{
+.sidebar_resume:hover {
     background-color: #f1f1f2;
-    color:#000;
+    color: #000;
 }
 
-@media(max-width:991px){
-    .app_main_content{
+@media(max-width:991px) {
+    .app_main_content {
         margin: 30px 0;
     }
 }
+
+/* navbar */
 
 .navbar_items {
     display: flex;
@@ -117,45 +122,51 @@ a:hover {
 .navbar_active {
     font-size: 2rem;
     font-weight: 700;
-    color: #354558;
+    color: #354358;
     border-bottom: 4px solid #00F260;
 }
 
 .navbar_item {
     padding-right: 20px;
     text-decoration: none;
-    color: #354458;
+    color: #354358;
     font-size: 1.3rem;
     cursor: pointer;
 }
 
 .navbar_item:hover {
-    background: -webkit-linear-gradient(#00F260,#0575E6);
+    background: -webkit-linear-gradient(#00F260, #0575E6);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent
 }
+
+/* about */
 
 .about {
     padding: 20px;
+    margin: -35px;
 }
 
 .about_intro {
     font-size: 1.1rem;
     padding: 20px;
+    margin: 10px 0;
 }
 
 .about_container {
     background-color: #dbdddf;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .about_heading {
     font-size: 25px;
     font-weight: 700;
-    color: #354458;
+    color: #354358;
+    margin-left: 10px;
 }
 
+/* skill-card */
 .skill-card {
     background-color: #fff;
     margin: 10px;
@@ -165,13 +176,14 @@ a:hover {
     border-radius: 10px;
 }
 
-.skill-card_icon { 
+.skill-card_icon {
     width: 40px;
     height: 40px;
 }
 
 .skill-card_body {
     margin-left: 15px;
+
 }
 
 .skill-card_content {
