@@ -77,7 +77,7 @@ const Resume = () => {
             <h5 className="resume-card_title">NVQ Level 4 Master Software</h5>
             <p className="resume-card_name">Code Nation</p>
             <p className="resume-card_details">
-            I have completed this 12 weeks course to become a technical professional and start a career as a Junior Full-stack Web Developer. For more details check out my LinkedIn.
+            I have completed this 12 weeks course to become a technical professional and start a career as a Junior Full-stack Web Developer. For more details check out my LinkedIn or download Resume.
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ const Resume = () => {
             <h5 className="resume-card_title">Full-Stack Project</h5>
             <p className="resume-card_name">Code Nation</p>
             <p className="resume-card_details">
-              We have created a Full-Stack project and many other projects, you can see them if you click on "Projects".
+              We have created a Full-Stack project and many other projects, you can see them by clicking on "Projects".
             </p>
           </div>
         </div>
