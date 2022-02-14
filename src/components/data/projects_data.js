@@ -9,7 +9,7 @@ const data_projects = [
     {
         name: "Portfolio website",
         image: portfolio,
-        deployed_url: "https://pythermarton.github.io/Tesla-Clone/",
+        deployed_url: "http://www.petermcodes.com",
         github_url: "https://github.com/PytherMarton/Portfolio",
         category: ['React']
     },
