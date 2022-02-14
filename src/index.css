@@ -90,12 +90,11 @@ a:hover {
 
 .sidebar_email {
     background-image: linear-gradient(to right bottom, #00F260, #0575E6);
-
     border-radius: 30px;
     color: #fff;
     margin: 15px 25px 0px;
     cursor: pointer;
-    transition: all 3s linear;
+    transition: all 0.3s linear;
 }
 
 .sidebar_email:hover {
@@ -191,4 +190,58 @@ a:hover {
     margin: 0;
     font-size: 0.9rem;
     color: #6e7e91;
+}
+
+/* resume */
+
+.resume {
+    padding-top: 20px;
+}
+
+.resume-card_heading,
+.reume-language_heading {
+    margin-left: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #354538;
+}
+
+.resume-card_body {
+    margin-top: 10px;
+}
+
+.resume-card_title {
+    font-weight: 700;
+}
+
+.resume-card_name {
+    font-size: 16px;
+}
+
+.resume-card_details {
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+/* bar */
+.bar {
+    width: 90%;
+    background-color: #f1f2f3;
+    border-radius: 20px;
+    margin-bottom: 12px;
+
+}
+
+.bar_icon {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
+
+.bar_wrapper {
+    background-image: linear-gradient(90deg, #00F260, #0575E6);
+    border-radius: 20px;
+    padding: 4px 14px;
+    color: #fff;
+    font-size: 0.9rem
 }
