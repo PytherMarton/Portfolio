@@ -11,32 +11,32 @@ const About = () => {
     {
       icon: computer,
       title: "Frondend Development",
-      about: "I can build a beautiful and scalable SPA using HTML, css and Reacj.js"
+      about: "I can build a beautiful and scalable SPA using HTML, CSS and React.js"
     },
     {
       icon: repair,
       title: "Backend Development",
-      about: "Handle database, server, api using and MySql"
+      about: "I can Handle databases, servers and API's using MongoDB and MySql"
     },
     {
       icon: api,
       title: "API Development",
-      about: "I can develop robust REST API using Node.js and Express",
+      about: "I can develop robust REST API using Node.js and Express.js",
     },
     {
       icon: algo,
-      title: "Competitive coder",
-      about: "I can develop robust REST API using Node.js and Express",
+      title: "Agile Environment",
+      about: "I can work in an Agile environment with timesheets and Trello.",
     },
     {
       icon: puzzle,
-      title: "Lorem sjifdsjfidsjfsjfisd",
-      about: "I can develop robust REST API using Node.js and Express",
+      title: "Version Control - Git",
+      about: "I can use Git and GitHub for version control and provide collaboration features",
     },
     {
       icon: backend,
-      title: "Lorem sjifdsjfidsjfsjfisd",
-      about: "I can develop robust REST API using Node.js and Express",
+      title: "Full-Stack Development",
+      about: "I can develop both client and server software in order to create a Full-Stack Web Application",
     }
   ];
 
