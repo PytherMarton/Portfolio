@@ -23,13 +23,14 @@ const Navbar = () => {
     },
     visible: {
       y: 0,
-      opacity: 1
-    },
-    transition: {
-      delay: 0.2,
-      duration: 0.7,
-      type: "spring"
+      opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.7,
+        type: "spring"
+      }
     }
+
   }
 
   return (

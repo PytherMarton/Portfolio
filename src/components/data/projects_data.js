@@ -14,7 +14,7 @@ const data_projects = [
         category: ['React']
     },
     {
-        name: "Cloning Tesla's landing page",
+        name: "Tesla landing page Clone",
         image: tesla,
         deployed_url: "https://pythermarton.github.io/Tesla-Clone/",
         github_url: "https://github.com/PytherMarton/Tesla-Clone",
@@ -35,7 +35,7 @@ const data_projects = [
         category: ['JavaScript', 'HTML', 'CSS']
     },
     {
-        name: "A builder website in Hungarian",
+        name: "Construction website (Hungarian)",
         image: builder,
         deployed_url: "https://pythermarton.github.io/Levi/",
         github_url: "https://github.com/PytherMarton/Levi",

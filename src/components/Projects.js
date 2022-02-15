@@ -19,11 +19,18 @@ const Projects = () => {
     },
     visible: {
       opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.6,
+      }
     },
-    transition: {
-      delay: 0.2,
-      duration: 0.6,
-    },
+    exit: {
+      opacit:0,
+      transition: {
+        ease: "easeInOut"
+      }
+    }
+   
   };
 
   return (
@@ -32,6 +39,7 @@ const Projects = () => {
       variants={project_variant}
       initial="hidden"
       animate="visible"
+      exit="exit"
     >
       <div className="projects_navbar">
         <div onClick={() => setProjects(data_projects)}>All</div>

@@ -12,7 +12,7 @@ const ProjectCard = ({project:{name, image, deployed_url, github_url}}) => {
                     <a href={github_url} target="_blank" rel="noopener noreferrer">
                         <img src={github} alt="github link" className="projectCard_icon"/>
                     </a>
-                    {name}
+                    <div className="project_name">{name}</div>
                 </div>
             </figure>
         </div>

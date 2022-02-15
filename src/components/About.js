@@ -47,18 +47,25 @@ const About = () => {
     },
     visible: {
       opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.6,
+      },
     },
-    transition: {
-      delay: 0.2,
-      duration: 0.6,
-    },
+    exit: {
+      opacit:0,
+      transition: {
+        ease: "easeInOut"
+      }
+    }
   };
 
   return (
     <motion.div className="about"
     variants={about_variant}
     inital="hidden"
-    animate="visible">
+    animate="visible"
+    exit="exit">
     <h6 className="about_intro">
         I describe myself as someone who's persistent, a quick learner and loves problem solving by using simple and scalable solutions.
     </h6>

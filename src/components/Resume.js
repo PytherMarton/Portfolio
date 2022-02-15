@@ -69,18 +69,25 @@ const Resume = () => {
     },
     visible: {
       opacity: 1,
+      transition: {
+        delay: 0.2,
+        duration: 0.6,
+      },
     },
-    transition: {
-      delay: 0.2,
-      duration: 0.6,
-    },
+    exit: {
+      opacit:0,
+      transition: {
+        ease: "easeInOut"
+      }
+    }
   };
 
   return (
     <motion.div className="container resume"
     variants={resume_variant}
     initial="hidden"
-    animate="visible">
+    animate="visible"
+    exit="exit">
       <div className="row">
         <div className="col-lg-6 resume-card">
           <h4 className="resume-card_heading">Education</h4>
