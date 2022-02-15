@@ -5,12 +5,14 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   const [projects, setProjects] = useState(data_projects);
+  const [active, setActive] = useState("All");
 
   const handleFilterCategory = (name) => {
     const new_array = data_projects.filter((project) =>
       project.category.includes(name)
     );
     setProjects(new_array);
+    setActive(name);
   };
 
   const project_variant = {
@@ -22,15 +24,14 @@ const Projects = () => {
       transition: {
         delay: 0.2,
         duration: 0.6,
-      }
+      },
     },
     exit: {
-      opacit:0,
+      opacit: 0,
       transition: {
-        ease: "easeInOut"
-      }
-    }
-   
+        ease: "easeInOut",
+      },
+    },
   };
 
   return (
@@ -42,10 +43,33 @@ const Projects = () => {
       exit="exit"
     >
       <div className="projects_navbar">
-        <div onClick={() => setProjects(data_projects)}>All</div>
-        <div onClick={() => handleFilterCategory("React")}>React</div>
-        <div onClick={() => handleFilterCategory("HTML")}>HTML/CSS</div>
-        <div onClick={() => handleFilterCategory("JavaScript")}>JavaScript</div>
+        <div
+          className={active === "All" && "projects-navbar-active"}
+          onClick={() => {
+            setProjects(data_projects);
+            setActive("All");
+          }}
+        >
+          All
+        </div>
+        <div
+          className={active === "React" && "projects-navbar-active"}
+          onClick={() => handleFilterCategory("React")}
+        >
+          React
+        </div>
+        <div
+          className={active === "HTML" && "projects-navbar-active"}
+          onClick={() => handleFilterCategory("HTML")}
+        >
+          HTML/CSS
+        </div>
+        <div
+          className={active === "JavaScript" && "projects-navbar-active"}
+          onClick={() => handleFilterCategory("JavaScript")}
+        >
+          JavaScript
+        </div>
       </div>
       <div className="row">
         {projects.map((project) => (

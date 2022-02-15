@@ -4,6 +4,7 @@ body {
     background-image: linear-gradient(to right bottom, #00F260, #0575E6);
     background-attachment: fixed;
     color: #354538;
+    font-family: sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -157,7 +158,7 @@ a:hover {
 }
 
 .about_intro {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     padding: 20px;
     margin: 10px 0;
 }
@@ -209,7 +210,7 @@ a:hover {
 .resume-card_heading,
 .reume-language_heading {
     margin-left: 10px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #354538;
 }
@@ -296,19 +297,33 @@ a:hover {
     justify-content: center;
 }
 
-/* .project_name {
-    margin-top: -10px;
-    padding-bottom: 25px;
-    margin-left: 10px;
-} */
-
 .projects_navbar {
     display: flex;
     margin-bottom: 5px;
+}
+
+.projects-navbar-active {
+    color: #00F260;
 }
 
 .projects_navbar>div {
     margin: 0 5px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .app_main_content {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 34px 15px;
+    }
+
+    .navbar_active {
+        font-size: 1.5rem;
+    }
+
+    .navbar_item {
+        font-size: 1rem;
+    }
 }
