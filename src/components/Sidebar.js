@@ -8,12 +8,9 @@ import linkedIn from "../assets/icons/linkedin.png";
 import { motion } from "framer-motion";
 
 const Sidebar = () => {
-  const handleEmailMe = () => {
-    window.open("mailto:martonpeter18@gmail.com");
-  };
 
   const sidebar_variant = {
-    hidden:{
+    hidden: {
       x: "-20vh",
     },
     visible: {
@@ -22,16 +19,18 @@ const Sidebar = () => {
       transition: {
         delay: 0.1,
         duration: 0.5,
-        type: "spring"
-      }
-    }
-  }
+        type: "spring",
+      },
+    },
+  };
 
   return (
-    <motion.div className="sidebar"
-    variants={sidebar_variant}
-    initial="hidden"
-    animate="visible">
+    <motion.div
+      className="sidebar"
+      variants={sidebar_variant}
+      initial="hidden"
+      animate="visible"
+    >
       <img src={avatar} alt="avatar" className="sidebar_avatar" />
       <div className="sidebar_name">
         Peter <span>Marton</span>
@@ -66,9 +65,9 @@ const Sidebar = () => {
         <div className="sidebar_item">martonpeter18@gmail.com</div>
         <div className="sidebar_item">07799210282</div>
       </div>
-      
-      <div className="sidebar_item sidebar_email" onClick={handleEmailMe}>
-        Email me
+
+      <div className="sidebar_item sidebar_email">
+        <a href="mailto:martonpeter18@gmail.com">Email me </a>
       </div>
     </motion.div>
   );
