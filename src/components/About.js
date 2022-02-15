@@ -5,6 +5,7 @@ import algo from "../assets/icons/algo.svg";
 import computer from "../assets/icons/computer.svg";
 import repair from "../assets/icons/repair.svg";
 import puzzle from "../assets/icons/puzzle.svg";
+import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
@@ -40,10 +41,26 @@ const About = () => {
     }
   ];
 
+  const about_variant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+    transition: {
+      delay: 0.2,
+      duration: 0.6,
+    },
+  };
+
   return (
-    <div className="about">
+    <motion.div className="about"
+    variants={about_variant}
+    inital="hidden"
+    animate="visible">
     <h6 className="about_intro">
-        I describe myself as someone who's persistant, a quick learner and loves problem solving by using simple and scalable solutions.
+        I describe myself as someone who's persistent, a quick learner and loves problem solving by using simple and scalable solutions.
     </h6>
     <div className="container about_container">
         <h6 className="about_heading">What I offer</h6>
@@ -64,7 +81,7 @@ const About = () => {
             }
         </div>
     </div>
-</div>
+</motion.div>
 );
 };
 

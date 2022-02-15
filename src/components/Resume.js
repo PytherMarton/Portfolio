@@ -8,8 +8,8 @@ import reactpng from "../assets/icons/react.png";
 import css from "../assets/icons/css.png";
 import git from "../assets/icons/git.png";
 import slack from "../assets/icons/slack.png";
-import stack from "../assets/icons/stack.png";
 import trello from "../assets/icons/trello.png"
+import { motion } from "framer-motion";
 
 const Resume = () => {
   const languages = [
@@ -60,16 +60,27 @@ const Resume = () => {
       icon: trello,
       name: "Trello",
       level: "80",
-    },
-    {
-      icon: stack,
-      name: "Stack Overflow",
-      level: "80",
-    },
+    }
   ];
 
+  const resume_variant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+    },
+    transition: {
+      delay: 0.2,
+      duration: 0.6,
+    },
+  };
+
   return (
-    <div className="container resume">
+    <motion.div className="container resume"
+    variants={resume_variant}
+    initial="hidden"
+    animate="visible">
       <div className="row">
         <div className="col-lg-6 resume-card">
           <h4 className="resume-card_heading">Education</h4>
@@ -110,7 +121,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,14 +5,33 @@ import resumeImg from "../assets/icons/resume.png";
 import avatar from "../assets/avatar.svg";
 import resume from "../assets/Peter-Marton_resume.docx";
 import linkedIn from "../assets/icons/linkedin.png";
+import { motion } from "framer-motion";
 
 const Sidebar = () => {
   const handleEmailMe = () => {
     window.open("mailto:martonpeter18@gmail.com");
   };
 
+  const sidebar_variant = {
+    hidden:{
+      x: "-20vh",
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.1,
+        duration: 0.5,
+        type: "spring"
+      }
+    }
+  }
+
   return (
-    <div className="sidebar">
+    <motion.div className="sidebar"
+    variants={sidebar_variant}
+    initial="hidden"
+    animate="visible">
       <img src={avatar} alt="avatar" className="sidebar_avatar" />
       <div className="sidebar_name">
         Peter <span>Marton</span>
@@ -51,7 +70,7 @@ const Sidebar = () => {
       <div className="sidebar_item sidebar_email" onClick={handleEmailMe}>
         Email me
       </div>
-    </div>
+    </motion.div>
   );
 };
 
