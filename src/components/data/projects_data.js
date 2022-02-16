@@ -5,6 +5,7 @@ import builder from "../../assets/projects_images/builder.jpeg";
 import portfolio from "../../assets/projects_images/portfolio.jpeg";
 // import bestFriend from "../../assets/projects_images/bestFriend.jpeg";
 import hackerTyper from "../../assets/projects_images/hackerTyper.png";
+import chat from "../../assets/projects_images/chat.png"
 
 const data_projects = [
     {
