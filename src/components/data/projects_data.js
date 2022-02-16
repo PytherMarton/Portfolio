@@ -3,7 +3,7 @@ import reactCalc from "../../assets/projects_images/reactCalc.jpeg";
 import dicegame from "../../assets/projects_images/dicegame.jpeg";
 import builder from "../../assets/projects_images/builder.jpeg";
 import portfolio from "../../assets/projects_images/portfolio.jpeg";
-import bestFriend from "../../assets/projects_images/bestFriend.jpeg";
+// import bestFriend from "../../assets/projects_images/bestFriend.jpeg";
 import hackerTyper from "../../assets/projects_images/hackerTyper.png";
 
 const data_projects = [
@@ -48,13 +48,6 @@ const data_projects = [
         deployed_url: "https://pythermarton.github.io/Levi/",
         github_url: "https://github.com/PytherMarton/Levi",
         category: ['HTML', 'CSS']
-    },
-    {
-        name: "Best Friend finder",
-        image: bestFriend,
-        deployed_url: "https://best-friend-finder.netlify.app/",
-        github_url: "https://github.com/PytherMarton/Full-stack-FE",
-        category: ['React']
     }
 ]
 
