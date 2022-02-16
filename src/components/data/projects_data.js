@@ -8,6 +8,13 @@ import hackerTyper from "../../assets/projects_images/hackerTyper.png";
 
 const data_projects = [
     {
+        name: "Chat App: -username: Visitor -password:123",
+        image: chat,
+        deployed_url: "https://chatlif3.netlify.app",
+        github_url: "https://github.com/PytherMarton/ChatApp",
+        category: ['React']
+    },
+    {
         name: "Portfolio website",
         image: portfolio,
         deployed_url: "http://www.petermcodes.com",
