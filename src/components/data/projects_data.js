@@ -6,6 +6,7 @@ import portfolio from "../../assets/projects_images/portfolio.jpeg";
 // import bestFriend from "../../assets/projects_images/bestFriend.jpeg";
 import hackerTyper from "../../assets/projects_images/hackerTyper.png";
 import chat from "../../assets/projects_images/chat.png"
+import shoppingList from "../../assets/projects_images/shoppingList.png";
 
 const data_projects = [
     {
@@ -28,6 +29,13 @@ const data_projects = [
         deployed_url: "https://pythermarton.github.io/Tesla-Clone/",
         github_url: "https://github.com/PytherMarton/Tesla-Clone",
         category: ['HTML', 'CSS']
+    },
+    {
+        name: "Shopping List Handler",
+        image: shoppingList,
+        deployed_url: "https://shopping-list-handler.netlify.app/",
+        github_url: "https://github.com/PytherMarton/Shopping-List",
+        category: ['React']
     },
     {
         name: "Hacker Typer",
