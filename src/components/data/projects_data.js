@@ -1,4 +1,4 @@
-import tesla from "../../assets/projects_images/tesla.jpeg";
+import tesla from "../../assets/projects_images/tesla.png";
 import reactCalc from "../../assets/projects_images/reactCalc.jpeg";
 import dicegame from "../../assets/projects_images/dicegame.jpeg";
 import builder from "../../assets/projects_images/builder.jpeg";
@@ -10,17 +10,17 @@ import shoppingList from "../../assets/projects_images/shoppingList.png";
 
 const data_projects = [
     {
-        name: "Chat App: -username: Visitor -password:123",
-        image: chat,
-        deployed_url: "https://chatlif3.netlify.app",
-        github_url: "https://github.com/PytherMarton/ChatApp",
-        category: ['React']
-    },
-    {
         name: "Portfolio website",
         image: portfolio,
         deployed_url: "http://www.petermcodes.com",
         github_url: "https://github.com/PytherMarton/Portfolio",
+        category: ['React']
+    },
+    {
+        name: "Chat App: - Username: 'Visitor' - Password: '123'",
+        image: chat,
+        deployed_url: "https://chatlif3.netlify.app",
+        github_url: "https://github.com/PytherMarton/ChatApp",
         category: ['React']
     },
     {
