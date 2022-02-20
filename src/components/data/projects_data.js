@@ -7,6 +7,7 @@ import portfolio from "../../assets/projects_images/portfolio.jpeg";
 import hackerTyper from "../../assets/projects_images/hackerTyper.png";
 import chat from "../../assets/projects_images/chat.png"
 import shoppingList from "../../assets/projects_images/shoppingList.png";
+import color from "../../assets/projects_images/color.png";
 
 const data_projects = [
     {
@@ -49,6 +50,13 @@ const data_projects = [
         image: reactCalc,
         deployed_url: "https://pythermarton.github.io/Calculator-react/",
         github_url: "https://github.com/PytherMarton/Calculator-react",
+        category: ['React']
+    },
+    {
+        name: "Color generator",
+        image: color,
+        deployed_url: "https://color-generator-net.netlify.app/",
+        github_url: "https://github.com/PytherMarton/Color-Generator",
         category: ['React']
     },
     {
