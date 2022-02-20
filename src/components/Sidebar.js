@@ -3,7 +3,7 @@ import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
 import resumeImg from "../assets/icons/resume.png";
 import avatar from "../assets/avatar.svg";
-import resume from "../assets/Peter-Marton_resume.docx";
+import resume from "../assets/Peter-Marton-resume.pdf";
 import linkedIn from "../assets/icons/linkedin.png";
 import { motion } from "framer-motion";
 
@@ -36,7 +36,7 @@ const Sidebar = () => {
         Peter <span>Marton</span>
       </div>
       <div className="sidebar_item sidebar_title">Junior Web Developer</div>
-      <a href={resume} download="Peter-Marton_resume.docx">
+      <a href={resume} download="Peter-Marton-resume.pdf">
         <div className="sidebar_item sidebar_resume">
           <img src={resumeImg} alt="resume" className="sidebar_icon" />
           Download Resume
