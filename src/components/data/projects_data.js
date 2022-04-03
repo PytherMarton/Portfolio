@@ -18,6 +18,13 @@ const data_projects = [
         category: ['React']
     },
     {
+        name: "Man & Van",
+        image: portfolio,
+        deployed_url: "https://www.yourjunkexpress.com/",
+        github_url: "https://github.com/PytherMarton/Tomi",
+        category: ['HTML, CSS, JavaScript']
+    },
+    {
         name: "Chat App: - Username: 'Visitor' - Password: '123'",
         image: chat,
         deployed_url: "https://chatlif3.netlify.app",
