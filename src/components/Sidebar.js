@@ -2,7 +2,7 @@ import React from "react";
 import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
 import resumeImg from "../assets/icons/resume.png";
-import avatar from "../assets/avatar.svg";
+import avatar from "../assets/newAvatar.svg";
 import resume from "../assets/Peter-Marton-resume.pdf";
 import linkedIn from "../assets/icons/linkedin.png";
 import { motion } from "framer-motion";
