@@ -23,7 +23,7 @@ const data_projects = [
         image: man,
         deployed_url: "https://www.yourjunkexpress.com/",
         github_url: "https://github.com/PytherMarton/Tomi",
-        category: ['JavaScript', 'HTML', 'CSS']
+        category: ['JavaScript']
     },
     {
         name: "Chat App: - Username: 'Visitor' - Password: '123'",
