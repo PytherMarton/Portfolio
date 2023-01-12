@@ -3,9 +3,7 @@ import reactCalc from "../../assets/projects_images/reactCalc.jpeg";
 import dicegame from "../../assets/projects_images/dicegame.jpeg";
 import builder from "../../assets/projects_images/builder.jpeg";
 import portfolio from "../../assets/projects_images/portfolio.jpeg";
-// import bestFriend from "../../assets/projects_images/bestFriend.jpeg";
 import hackerTyper from "../../assets/projects_images/hackerTyper.png";
-import chat from "../../assets/projects_images/chat.png"
 import shoppingList from "../../assets/projects_images/shoppingList.png";
 import color from "../../assets/projects_images/color.png";
 import man from "../../assets/projects_images/man.png";
@@ -24,13 +22,6 @@ const data_projects = [
         deployed_url: "https://www.yourjunkexpress.com/",
         github_url: "https://github.com/PytherMarton/Tomi",
         category: ['JavaScript']
-    },
-    {
-        name: "Chat App: - Username: 'Visitor' - Password: '123'",
-        image: chat,
-        deployed_url: "https://chatlif3.netlify.app",
-        github_url: "https://github.com/PytherMarton/ChatApp",
-        category: ['React']
     },
     {
         name: "Tesla landing page Clone",
