@@ -2,8 +2,9 @@ import React from "react";
 import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
 import resumeImg from "../assets/icons/resume.png";
-import avatar from "../assets/newAvatar.svg";
-import resume from "../assets/Peter-Marton-resume.pdf";
+import avatar from "../assets/Peter.jpeg";
+import resume from "../assets/Peter CV English.pdf";
+import resume1 from "../assets/Peter CV Deutsch.pdf";
 import linkedIn from "../assets/icons/linkedin.png";
 import { motion } from "framer-motion";
 
@@ -36,10 +37,16 @@ const Sidebar = () => {
         Peter <span>Marton</span>
       </div>
       <div className="sidebar_item sidebar_title">Junior Web Developer</div>
-      <a href={resume} download="Peter-Marton-resume.pdf">
+      <a href={resume} download="Peter CV English.pdf">
         <div className="sidebar_item sidebar_resume">
           <img src={resumeImg} alt="resume" className="sidebar_icon" />
-          Download Resume
+          Download Resume - English
+        </div>
+      </a>
+      <a href={resume1} download="Peter CV Deutsch.pdf">
+        <div className="sidebar_item sidebar_resume">
+          <img src={resumeImg} alt="resume" className="sidebar_icon" />
+          Download Resume - German
         </div>
       </a>
       <div className="sidebar_contact sidebar_github">
@@ -60,10 +67,10 @@ const Sidebar = () => {
 
         <div className="sidebar_location">
           <img src={pin} alt="location" className="sidebar_icon mr-3" />
-          Liverpool, United Kingdom
+          Uster, Zürich, Switzerland
         </div>
         <div className="sidebar_item">martonpeter18@gmail.com</div>
-        <div className="sidebar_item">07799210282</div>
+        <div className="sidebar_item">+447799210282</div>
       </div>
 
       <div className="sidebar_item sidebar_email">
