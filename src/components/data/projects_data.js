@@ -6,7 +6,6 @@ import portfolio from "../../assets/projects_images/portfolio.jpeg";
 import hackerTyper from "../../assets/projects_images/hackerTyper.png";
 import shoppingList from "../../assets/projects_images/shoppingList.png";
 import color from "../../assets/projects_images/color.png";
-import man from "../../assets/projects_images/man.png";
 
 const data_projects = [
     {
@@ -15,13 +14,6 @@ const data_projects = [
         deployed_url: "http://www.petermcodes.com",
         github_url: "https://github.com/PytherMarton/Portfolio",
         category: ['React']
-    },
-    {
-        name: "Man & Van",
-        image: man,
-        deployed_url: "https://www.yourjunkexpress.com/",
-        github_url: "https://github.com/PytherMarton/Tomi",
-        category: ['JavaScript']
     },
     {
         name: "Tesla landing page Clone",
